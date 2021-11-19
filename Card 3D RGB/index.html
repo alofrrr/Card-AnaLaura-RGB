@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js">
+    </script>
+    <title>Card Ana Laura</title>
+</head>
+<body>
+    <div class="card rgb">
+        <div class="card-foto"></div>
+        <div class="card-texto">
+            <span class="dev">Ana Laura Oliveira</span>
+            <h2>Desenvolvedora Web</h2>
+            <p>Estudo realizado com foco no front-end. Como ja dizia Chewbacca:
+                "Uhrrrr ahhhrrrrr aarrrgh".
+            </p>
+        </div>
+        <div class="card-status">
+            <div class="status">
+                <a href="https://github.com/alofrrr" target="_blank"><input type="button" class="github"></a>
+            </div>
+            <div class="status">
+                <a href="https://www.instagram.com/alofrrr/" target="_blank"><input type="button" class="instagram"></a>
+            </div>
+            <div class="status">
+                <a href="https://www.linkedin.com/in/ana-laura-oliveira-ferreira-a70b69174/" target="_blank"><input type="button" class="linkedin"></a>
+            </div>
+    </div> </div>
+
+<!-- biblioteca no linkada no head e ativando ela:-->
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+  
+            // max tilt rotation (degrees)
+            max: 20,
+            // Speed of the enter/exit transition
+            speed: 300,
+
+            glare:true,
+            reverse: true,
+            "max-glare":0.3
+        });
+    </script>
+
+
+</body>
+</html>

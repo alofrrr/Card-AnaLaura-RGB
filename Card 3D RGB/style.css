@@ -1,0 +1,175 @@
+@font-face {
+    font-family: normal;
+    src: url('Louis\ George\ Cafe.ttf') format('truetype');
+  
+  }
+  
+  @font-face {
+    font-family: negrito;
+    src: url('Louis\ George\ Cafe\ Bold.ttf') format('truetype');
+  
+  }
+  @font-face {
+    font-family: italico;
+    src: url('Louis\ George\ Cafe\ Italic.ttf') format('truetype');
+  
+  }
+  :root{
+    --font: "italico", serif;
+    --font: "normal", serif;
+    --font: "negrito", serif;
+  
+  }
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(fundo.jpg);
+    overflow: hidden;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 90px;
+    grid-template-areas: "foto" "texto" "status";
+
+    border-radius: 18px;
+    background: #1d1d1d;
+    color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin: 30px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.card-foto{
+    grid-area: foto;
+    background:linear-gradient(#fff0 0%, #fff0 90%, #1d1d1d 100%), url("eu.jpeg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size:cover;
+}
+
+
+.card-texto{
+    grid-area: texto;
+    margin: 17px;
+    transform: translateZ(40px);
+}
+.dev{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: italico;
+}
+.card-texto h2{
+    margin-top: 0px;
+    font-size: 30px;
+    font-family: negrito;
+}
+.card-texto p{
+    color: grey;
+    font-size: 17px;
+    font-family: normal;
+    margin-top: -15px;
+  
+}
+
+.card:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.js-tilt-glare{
+    border-radius: 16px;
+}
+
+.rgb::after{
+    content: "";
+    background: linear-gradient(45deg,
+    #ff0000 0%,
+    #ff9a00 10%,
+    #d0de21 20%,
+    #4fdc4a 30%,
+    #3fdad8 40%,
+    #2fc9e2 50%,
+    #1c7fee 60%,
+    #5f15f2 70%,
+    #ba0cf8 80%,
+    #fb07d9 90%,
+    #ff0000 100%)
+
+    repeat 0% 0% / 300% 100%;
+    position: absolute;
+    inset: -3px;
+    border-radius: 16px;
+    filter: blur(8px);
+    transform: translateZ(-2px);
+    animation: rgb 3s linear infinite;
+}
+
+@keyframes rgb {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+
+}
+
+.github {
+    background: url("github.png");
+    height: 50px;
+    width: 50px;
+    border:#1d1d1d ;
+    align-items: center;
+    background-size: cover;
+  }
+
+  .instagram {
+    background: url("instagram.png");
+    height: 50px;
+    width: 50px;
+    color: white;
+    border:#1d1d1d ;
+    align-items: center;
+    background-size: cover;
+
+  }
+  .linkedin {
+    background: url("linkedin.png");
+    height: 50px;
+    width: 50px;
+    color: white;
+    border:#1d1d1d ;
+    align-items: center;
+    background-size: cover;
+
+  }
+
+  .card-status{
+    grid-area: status;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px; 
+    border-bottom-right-radius: 15px;
+    background: #1d1d1d;
+}
+
+.status{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+    
+}
+
+
