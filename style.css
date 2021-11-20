@@ -1,17 +1,17 @@
 @font-face {
     font-family: normal;
-    src: url('/Louis\ George\ Cafe.ttf') format('truetype');
+    src: url('Louis\ George\ Cafe.ttf') format('truetype');
   
   }
   
   @font-face {
     font-family: negrito;
-    src: url('/Louis\ George\ Cafe\ Bold.ttf') format('truetype');
+    src: url('Louis\ George\ Cafe\ Bold.ttf') format('truetype');
   
   }
   @font-face {
     font-family: italico;
-    src: url('/Louis\ George\ Cafe\ Italic.ttf') format('truetype');
+    src: url('Louis\ George\ Cafe\ Italic.ttf') format('truetype');
   
   }
   :root{
@@ -27,7 +27,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(/fundo.jpg);
+    background: url(fundo.jpg);
     overflow: hidden;
 }
 
@@ -52,7 +52,7 @@ body{
 
 .card-foto{
     grid-area: foto;
-    background:linear-gradient(#fff0 0%, #fff0 90%, #1d1d1d 100%), url("/eu.jpeg");
+    background:linear-gradient(#fff0 0%, #fff0 90%, #1d1d1d 100%), url("eu.jpeg");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size:cover;
@@ -123,7 +123,7 @@ body{
 }
 
 .github {
-    background: url("/github.png");
+    background: url("github.png");
     height: 50px;
     width: 50px;
     border:#1d1d1d ;
@@ -132,7 +132,7 @@ body{
   }
 
   .instagram {
-    background: url("/instagram.png");
+    background: url("instagram.png");
     height: 50px;
     width: 50px;
     color: white;
@@ -142,7 +142,7 @@ body{
 
   }
   .linkedin {
-    background: url("/linkedin.png");
+    background: url("linkedin.png");
     height: 50px;
     width: 50px;
     color: white;
